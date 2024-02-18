@@ -114,7 +114,7 @@ body{
     justify-self: center;
     color: #fff;
     text-decoration: none;
-    padding: 13px 22px;
+    padding: 13px 30px;
     border-radius: 32px;
 }
 
@@ -135,13 +135,18 @@ body{
 }
 
 .about_main{
-    padding: 80px;
+    padding: 10px;
     display: grid;
     width: 90%;
     margin: 0 auto;
     gap: 1em;
     overflow: hidden;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+/* Incluido por mi para configurar el color de HALAMARCA */
+.about_title{
+    color: var(--color-title);  
 }
 
 .about_icons{
@@ -159,9 +164,41 @@ body{
 
 /* Contáctenos */
 
+/* Esta código del .contacnenos es tomado de la página magicpattern que corresponde al patrón polka V2*/
 .contactenos{
     background-color: #e5e5f7;
-    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 10px 10px;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
     overflow: hidden;
+}
+
+.contactenos_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.contactenos_picture{
+    max-width: 500px;
+}
+
+.contactenos_paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.contactenos_img{
+    width: 10%;
+    /* display: block; */
+/* las líneas anteriores son la configuración original del contactenos_img */
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 1em;
 }
