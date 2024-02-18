@@ -117,3 +117,9 @@ body{
     padding: 13px 22px;
     border-radius: 32px;
 }
+
+/* About */
+
+.about{
+    text-align: center;
+}
